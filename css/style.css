@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  /* background-color: rgba(255, 191, 172, 0.671); */
+  margin: 0 auto;
+}
+header {
+  background: rgb(194, 0, 0);
+  background: linear-gradient(
+    183deg,
+    rgba(194, 0, 0, 1) 18%,
+    rgba(224, 31, 0, 1) 48%,
+    rgba(255, 0, 0, 1) 74%
+  );
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 30%;
+}
+.logo img {
+  width: 25%;
+  padding: 3px;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+nav ul {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu ul li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(214, 194, 194);
+}
+.menu ul li a:hover {
+  color: black;
+  padding: 10px;
+}
+/* titulo */
+.titulo {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+  align-items: center;
+  border-bottom: 2px double rgb(255, 47, 47);
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+/* APLICANDO ESTILO A TODO EL CONTENIDO */
+.contenido {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 13px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+}
+.contenido table tr td img {
+  filter: saturate(226%) contrast(159%) drop-shadow(10px 10px 5px #fda604);
+}
+.tabla tr th {
+  background: rgb(203, 83, 0);
+  background: linear-gradient(
+    4deg,
+    rgba(203, 83, 0, 0.6909138655462185) 10%,
+    rgba(226, 89, 0, 0.5900735294117647) 49%,
+    rgba(255, 134, 0, 0.46682422969187676) 74%
+  );
+}
+.tabla tr td {
+  border-radius: 5px;
+  padding: 10px;
+}
+.titletable {
+  padding: 30px;
+  border-bottom: 2px double rgb(221, 50, 50);
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+/* ANIMACION  BANNER */
+.banner {
+  width: 100%;
+  height: 400px;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes banner {
+  0%,
+  20% {
+    background-image: url(../img/banner.jpg);
+  }
+  25%,
+  45% {
+    background-image: url(../img/banner2.png);
+  }
+  50%,
+  70% {
+    background-image: url(../img/servi-licencias.jpg);
+  }
+  75%,
+  100% {
+    background-image: url(../img/banner4.jpg);
+  }
+}
+
+.info {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info h1 {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.info p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* MENU DE SERVICIOS DE LA EMPRESA */
+.menuservicios {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  background-color: rgba(255, 60, 0, 0.521);
+  flex-direction: column;
+  flex: 30%;
+}
+
+.menuservicios div img {
+  width: 360px;
+}
+.menuservicios h3 {
+  background-color: rgba(39, 38, 38, 0.342);
+  color: white;
+}
+.menuservicios div h3 {
+  background-color: #ff2a04c5;
+}
+.menuservicios div:hover {
+  background-color: aqua;
+}
+.menuservicios div img:hover {
+  transform: scale(1.4) skew(4deg) translate(22px, 25px);
+  -webkit-transform: scale(1.4) skew(4deg) translate(22px, 25px);
+  -moz-transform: scale(1.4) skew(4deg) translate(22px, 25px);
+}
+.caja {
+  border: 1px solid saddlebrown;
+  font-weight: bold;
+  width: 120px;
+  height: 220px;
+  line-height: 120px;
+  text-align: center;
+  margin: 5px;
+  text-align: center;
+}
+
+.container-servi {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: wheat;
+}
+
+.info-services {
+  flex: 70%;
+}
+.info-services h1 {
+  padding: 30px;
+  color: rgb(74, 74, 226);
+}
+.info-services p,
+ul,
+h4 {
+  padding: 20px;
+}
+
+/* ESTILOS A LA PAGINA "CONSTRUCCION" */
+
+.banner-construccion {
+  width: 100%;
+  height: 400px;
+  animation: banner-construccion 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@keyframes banner-construccion {
+  0%,
+  100% {
+    background-image: url(../img/construccion.jpg);
+  }
+}
+.info-construccion {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info-construccion h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* ESTILOS A LA PAGINA "INGENIERIA" */
+
+.banner-ingenieria {
+  width: 100%;
+  height: 400px;
+  animation: banner-ingenieria 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@keyframes banner-ingenieria {
+  0%,
+  100% {
+    background-image: url(../img/servi-ingenieria.png);
+  }
+}
+.info-ingenieria {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info-ingenieria h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* ESTILOS A LA PAGINA "LICENCIAS" */
+
+.banner-licencias {
+  width: 100%;
+  height: 400px;
+  animation: banner-licencia 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@keyframes banner-licencia {
+  0%,
+  100% {
+    background-image: url(../img/servi-licencias.jpg);
+  }
+}
+.info-licencias {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info-licencias h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* ESTILO A LA PAGINA "QUIENES SOMOS" */
+.container-qsomos{
+display: flex;
+flex-flow: row wrap;
+}
+.container-qsomos div{
+margin: 5px;
+background-color: rgb(219, 31, 31);
+}
+.container-qsomos div h3{
+  color: black;
+}
+.container-qsomos h3{
+  padding: 20px;
+}
+.container-qsomos p{
+  color: white;
+  padding: 20px;
+}
+.container-qsomos ul{
+  color: white;
+  padding: 20px;
+}
+
+.qsomoscaja1{
+  flex:20%;
+  border-radius: 15px;
+}
+.qsomoscaja2{
+flex: 20%;
+border-radius: 15px;
+}
+.qsomoscaja3{
+  flex: 25%;
+  border-radius: 15px;
+}
+.qsomoscaja4{
+  flex:25%;
+  border-radius: 15px;
+}
+
+footer h3 {
+  text-align: center;
+}
+/* APLICANDO ANIMACIONES */
+p {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+/* APLICANDO ESTILO CSS A LA TABLA */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
