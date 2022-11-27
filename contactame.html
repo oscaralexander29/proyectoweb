@@ -15,6 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- LINK DEL RECAPCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <header>
@@ -52,9 +54,96 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <!-- BANNER -->
+    <div class="banner-contactame">
+      <div class="capa-contactame"></div>
+      <div class="info-contactame">
+        <h1>CONTÁCTENOS</h1>
+      </div>
+    </div>
+    <main class="container-contactame">
       <!-- Bechtel empresa constructora de EEUU -->
-      <section></section>
+      <section class="seccion1-contactame">
+        <h2>Cómo contactarnos</h2>
+        <p>
+          Todos los currículums / CV deben enviarse a través del proceso de
+          solicitud en línea para ser considerados. Para buscar y solicitar un
+          puesto, siga el proceso de solicitud en línea que se detalla en la
+          <a href="#">sección de carreras</a>
+        </p>
+        <h2>¿Quieres convertirte en proveedor o contratista?</h2>
+        <p>
+          ¿Desea convertirse en proveedor o contratista? Visite el
+          <a href="#">portal de proveedores y contratos</a> . El portal también
+          incluye una lista completa de
+          <a href="#">contactos para pequeñas empresas</a> .
+        </p>
+        <h2>¿Tiene una consulta de los medios?</h2>
+        <p>
+          Si usted es un miembro de los medios de comunicación que quiere
+          comunicarse con nosotros para hacer preguntas o una entrevista, siga
+          este enlace a nuestra lista de
+          <a href="#">contactos de medios dedicados.</a>
+        </p>
+        <h2>Todas las demás consultas</h2>
+        <p>
+          Si no puede encontrar lo que necesita, háganoslo saber. Complete el
+          formulario y proporciónenos sus datos y le responderemos por correo
+          electrónico. Es importante que complete todos los campos marcados con
+          un asterisco (*).
+        </p>
+      </section>
+      <section class="seccion2-contactame">
+        <!-- FORMUARIO -->
+        <form action="" class="formulario">
+          <label for="">Yo quiero*:</label>
+          <br /><br />
+          <select name="" id="">
+            <option value="">
+              Solicitar un trabajo/Comprobar el estado del CV
+            </option>
+            <option value="">
+              Pongase en contacto con la Fundacion del Grupo Bechtel
+            </option>
+            <option value="">
+              Conviertase en proveedor/contratista de Bechtel
+            </option>
+            <option value="">Otro</option>
+          </select>
+          <br /><br />
+          <input type="text" placeholder="Nombre" />
+          <br /><br />
+          <input type="email" placeholder="email: oscarceron828@email.com" />
+          <br /><br />
+          <input type="text" placeholder="Organizacion" />
+          <br /><br />
+          <select name="" id="">
+            <option value="">El Salvador</option>
+            <option value="">Guatemala</option>
+            <option value="">Honduras</option>
+            <option value="">Nicaragua</option>
+            <option value="">Costa Rica</option>
+            <option value="">Panama</option>
+            <option value="">Belice</option>
+            <option value="">Mexico</option>
+            <option value="">Estados Unidos</option>
+            <option value="">Canada</option>
+            <option value="">Colombia</option>
+            <option value="">Argentina</option>
+            <option value="">Ecuador</option>
+            <option value="">Venezuela</option>
+            <option value="">Chile</option>
+            <option value="">Peru</option>
+          </select>
+          <br /><br />
+          <label for="">Comentarios*:</label>
+          <br />
+          <textarea name="mensaje" id="" cols="53" rows="6"></textarea>
+          <br /><br />
+          <input type="submit" value="enviar" id="boton" class="boton-enviar">
+        </form>
+        
+      </section>
     </main>
     <footer>
       <h3>&copy;Copyrigth: BECHTEL</h3>

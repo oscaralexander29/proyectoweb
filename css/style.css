@@ -9,7 +9,6 @@ main {
   margin: 0 auto;
 }
 header {
-  background: rgb(194, 0, 0);
   background: linear-gradient(
     183deg,
     rgba(194, 0, 0, 1) 18%,
@@ -49,6 +48,63 @@ nav ul {
   color: black;
   padding: 10px;
 }
+
+/* BANNER INICIO */
+
+.banner-inicio {
+  width: 100%;
+  height: 400px;
+  animation: banner-inicio 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@keyframes banner-inicio {
+  0%,
+  10% {
+    background-image: url(../img/banner-inicio1.jpeg);
+  }
+  15%,
+  30%{
+    background-image: url(../img/banner-inicio2.jpeg);
+  }
+  35%,
+  50%{
+    background-image: url(../img/banner-inicio3.jpeg);
+  }
+  55%,
+  65%{
+    background-image: url(../img/banner-inicio4.jpeg);
+  }
+  70%,
+  80%{
+    background-image: url(../img/banner-inicio5.jpeg);
+  }
+  85%,
+  100%{
+    background-image: url(../img/banner-inicio6.jpeg);
+  }
+}
+.info-inicio {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.info-inicio h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  border-left: 7px solid red;
+}
+.banner-inicio p{
+  background-color:rgb(0, 0, 0, 0.5) ;
+  color: white;
+}
+
 /* titulo */
 .titulo {
   display: flex;
@@ -292,46 +348,154 @@ h4 {
 }
 
 /* ESTILO A LA PAGINA "QUIENES SOMOS" */
-.container-qsomos{
-display: flex;
-flex-flow: row wrap;
+.container-qsomos {
+  display: flex;
+  flex-flow: row wrap;
 }
-.container-qsomos div{
-margin: 5px;
-background-color: rgb(219, 31, 31);
+.container-qsomos div {
+  margin: 5px;
+  background-color: rgb(219, 31, 31);
 }
-.container-qsomos div h3{
+.container-qsomos div h3 {
   color: black;
 }
-.container-qsomos h3{
+.container-qsomos h3 {
   padding: 20px;
 }
-.container-qsomos p{
+.container-qsomos p {
   color: white;
   padding: 20px;
 }
-.container-qsomos ul{
+.container-qsomos ul {
   color: white;
   padding: 20px;
 }
 
-.qsomoscaja1{
-  flex:20%;
+.qsomoscaja1 {
+  flex: 20%;
   border-radius: 15px;
 }
-.qsomoscaja2{
-flex: 20%;
-border-radius: 15px;
+.qsomoscaja2 {
+  flex: 20%;
+  border-radius: 15px;
 }
-.qsomoscaja3{
+.qsomoscaja3 {
   flex: 25%;
   border-radius: 15px;
 }
-.qsomoscaja4{
-  flex:25%;
+.qsomoscaja4 {
+  flex: 25%;
   border-radius: 15px;
 }
 
+/* ESTILOS A LA PAGINA "CONTACTAME" */
+
+.banner-contactame {
+  width: 100%;
+  height: 400px;
+  animation: banner-contactame 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding: 20px;
+}
+@keyframes banner-contactame {
+  0%,
+  100% {
+    background-image: url(../img/miembros-contactanos.jpg);    
+  }
+}
+.info-contactame {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info-contactame h1 {
+  background-color: rgba(0,0,0,0.5);
+  color: #fafafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  border-left: 7px solid red;
+}
+.container-contactame{
+  display: flex;
+  flex-flow: row wrap;
+}
+.seccion1-contactame{
+  flex: 50%;
+}
+.seccion2-contactame{
+  flex: 50%;
+  background-image: url(../img/fondo-formulario.jpeg);
+}
+.seccion1-contactame p{
+  padding: 25px;
+}
+
+/* ESTILO  A EL FORMULARIO */
+.formulario{
+  margin: 35px;
+  padding: 20px;
+  background-color: rgb(0,0,0,0.5);
+}
+.formulario label{
+  color: white;
+}
+.formulario select, input{
+  padding: 10px 40px;
+}
+
+.boton-enviar{
+  padding: 5px 30px;
+  color: white;
+  font-size: 1em;
+  background-color: #5dade2;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* ESTILO A LA PAGINA "UBICACION" */
+.container-ubicacion h3{
+  background-color: #59d173;
+  border-left: 10px solid red;
+  padding: 20px;
+  text-align: center;
+}
+.ubicacion{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(245, 229, 209);
+}
+.ubicacion div{
+  padding: 20px;
+  background-color:rgb(194, 255, 235) ;
+  margin: 10px;
+}
+.ubicacion h3{
+  text-align: center;
+  background-color: rgb(58, 112, 112);
+  color: white;
+}
+
+.caja1-ubi{
+  flex: 30%;
+}
+.caja2-ubi{
+  flex: 30%;
+}
+.caja3-ubi{
+  flex: 30%;
+}
+
+
+/* ESTILO A EL PIE DE PAGINA */
+
+footer {
+  background-image: url(../img/fondopiee.jpeg);
+}
 footer h3 {
   text-align: center;
 }
